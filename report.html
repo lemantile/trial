@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wildlife Damage Report</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f9f4; color: #333; padding: 20px;">
+
+  <h2 style="color: #2e8b57; text-align: center;">🌾 Wildlife Damage Report Form 🐾</h2>
+
+  <form style="background-color: #ffffff; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+    <label for="reporter" style="display: block; margin-bottom: 8px;">Your Name:</label>
+    <input type="text" id="reporter" name="reporter" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <label for="location" style="display: block; margin-bottom: 8px;">Incident Location:</label>
+    <input type="text" id="location" name="location" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+
+    <label for="damageType" style="display: block; margin-bottom: 8px;">Type of Damage:</label>
+    <select id="damageType" name="damageType" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      <option value="">-- Select One --</option>
+      <option value="crop">Crop Damage</option>
+      <option value="livestock">predators</option>
+      <option value="property">Property Damage</option>
+    </select>
+
+    <label for="description" style="display: block; margin-bottom: 8px;">Description of the Incident:</label>
+    <textarea id="description" name="description" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 20px;"></textarea>
+
+    <button type="submit" style="background-color: #2e8b57; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 100%;">
+      Submit Report
+    </button>
+  </form>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for reporting the incident! Our team will review it shortly.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

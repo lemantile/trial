@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wildlife Watch - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f9f4;
+      color: #2b4d27;
+    }
+    header {
+      background-color: #2b4d27;
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    nav {
+      background-color: #e0eae0;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #2b4d27;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2') no-repeat center center;
+      background-size: cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .content {
+      padding: 2em;
+      text-align: center;
+    }
+    .cta-button {
+      background-color: #2b4d27;
+      color: white;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 1em;
+    }
+    .cta-button:hover {
+      background-color: #3e6d3d;
+    }
+    footer {
+      background-color: #e0eae0;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wildlife Watch</h1>
+    <p>Empowering communities to protect nature</p>
+  </header>
+
+  <nav>
+    <a href="login.html">Login</a>
+    <a href="report.html">Report Incident</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Report. Protect. Preserve.
+  </div>
+
+  <div class="content">
+    <h2>Welcome to Wildlife Watch</h2>
+    <p>Join hands with your community to report and prevent the destruction of wildlife around our parks. Every report helps us take action and protect our natural heritage.</p>
+    <button class="cta-button" onclick="location.href='/login'">Get Started</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Wildlife Watch Initiative. All rights reserved.
+  </footer>
+</body>
+</html>
